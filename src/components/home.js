@@ -17,7 +17,7 @@ const mainCities = [
 'Sydney',
 ];
 
-const home = () => {
+const Home = () => {
     const dispatch = useDispatch();
     const fetchPromises = mainCities.map(city => dispatch(fetchAqi(city)));
 
@@ -48,5 +48,5 @@ const home = () => {
   )
 };
 
-export default home;
+export default Home;
 
