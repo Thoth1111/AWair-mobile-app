@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import fetchAqi from '../Redux/API/airData';
+import { fetchAqi } from '../Redux/home/homeSlice';
 import '../styles/home.css';
 
 const mainCities = [

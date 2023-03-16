@@ -30,7 +30,7 @@ const Navbar = () => {
         AW
         <span>air</span>
       </h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="cityname">
           Enter City Name
           <input
@@ -44,14 +44,12 @@ const Navbar = () => {
           />
           <button
             type="submit"
-            id="cityname"
-            onClick={handleSubmit}
+            id="sub-btn"
           >
             <BiSearchAlt />
           </button>
         </label>
       </form>
-      {/* {error && <p>{error}</p>} */}
     </nav>
   );
 };
