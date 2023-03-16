@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './routes/home';
 import City from './routes/city';
-import Nav from './components/navbar';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <>
       <Router>
-        <Nav />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/city" element={<City />} />
