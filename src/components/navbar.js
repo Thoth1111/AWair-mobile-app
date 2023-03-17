@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi';
+import '../styles/navbar.css';
 
 const Navbar = () => {
   const [cityname, setCityName] = useState('');
@@ -15,6 +16,7 @@ const Navbar = () => {
     if (cityname) {
       navigate(`/city/${cityname}`);
     }
+    setCityName('');
   };
 
   const handleKeyDown = (event) => {
@@ -28,11 +30,11 @@ const Navbar = () => {
     <nav>
       <h1>
         AW
-        <span>air</span>
+        <span id="air-txt">~air</span>
       </h1>
-      <form onSubmit={handleSubmit}>
+      <span id="description-txt">Global Real-time Air Quality index.</span>
+      <form className="form-section" onSubmit={handleSubmit}>
         <label htmlFor="cityname">
-          Enter City Name
           <input
             id="cityname"
             name="cityname"
@@ -46,7 +48,7 @@ const Navbar = () => {
             type="submit"
             id="sub-btn"
           >
-            <BiSearchAlt />
+            <BiSearchAlt className="search-icon" />
           </button>
         </label>
       </form>

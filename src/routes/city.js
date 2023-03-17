@@ -10,12 +10,12 @@ const City = () => {
   const navigate = useNavigate();
   const newCity = useSelector((state) => {
     const latestCity = state.home[state.home.length - 1];
-    console.log(latestCity);
     return latestCity && latestCity.status === 'success' ? latestCity : null;
   });
 
   const handleReturn = () => {
     navigate('/');
+    window.location.reload();
   };
 
   useEffect(() => {
