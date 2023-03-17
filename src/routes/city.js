@@ -1,36 +1,63 @@
 import React, { useEffect } from 'react';
+import { BiChevronLeft } from 'react-icons/bi';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { fetchAqi } from '../Redux/home/homeSlice';
 
 const City = () => {
   const { cityname } = useParams();
-  console.log(cityname);
   const dispatch = useDispatch();
-  const { data, status } = useSelector((state) => state.home);
+  const navigate = useNavigate();
+  const newCity = useSelector((state) => {
+    const latestCity = state.home[state.home.length - 1];
+    console.log(latestCity);
+    return latestCity && latestCity.status === 'success' ? latestCity : null;
+  });
+
+  const handleReturn = () => {
+    navigate('/');
+  };
 
   useEffect(() => {
     dispatch(fetchAqi(cityname));
-    console.log('Fetch initiated');
   }, [cityname, dispatch]);
 
-  return (
-    <div>
-      {status === 'loading' && <p>Loading...</p>}
-      {status === 'succeeded' && (
-      <div key={data.idx}>
-        <span className="city-name">{data.city.name}</span>
+  let content;
+
+  if (!newCity.aqi) {
+    content = (
+      <span className="load-error">
+        Sorry. No Stats found for
+        {' '}
+        {cityname}
+        . Please try again.
+      </span>
+    );
+  } else {
+    content = (
+      <div key={newCity.idx}>
+        <span className="city-name">{newCity.city.name}</span>
         <br />
         <span className="aqi-value">
           AQI (Air Quality Index):
           {' '}
-          {data.aqi}
+          {newCity.aqi}
         </span>
         <br />
-        <span>{data.attributions.url}</span>
+        <span>{newCity.attributions.url}</span>
       </div>
-      )}
-      {status === 'failed' && <p>Failed to load data</p>}
+    );
+  }
+  return (
+    <div>
+      <button
+        type="button"
+        className="bck-btn"
+        onClick={handleReturn}
+      >
+        <BiChevronLeft id="bck-chevron" />
+      </button>
+      <div>{content}</div>
     </div>
   );
 };

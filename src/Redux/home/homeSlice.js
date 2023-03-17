@@ -16,7 +16,7 @@ const cleanData = (apiData) => {
 export const fetchAqi = createAsyncThunk('aqi/fetchAqi', async (city) => {
   const { data } = await (axios.get(`${AQI_URL}${city}${token}`));
   const citiesData = cleanData(data);
-  return citiesData;
+  return { ...citiesData, status: 'success' };
 });
 
 const initialState = [];
