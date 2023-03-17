@@ -1,0 +1,158 @@
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    .cities-container {
+        display: flex;
+        gap: 10px;
+        width: 99vw;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        padding: 0;
+    }
+
+    .main-city {
+        display: block;
+        height: 80vh;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+section {
+  width: 99vw;
+  margin: 0 0.5vw;
+}
+
+#home-intro {
+  width: 100%;
+  background-color: #4369b2;
+  color: antiquewhite;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.cities-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-city {
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #2d4573;
+  height: 50vh;
+  width: 33vw;
+}
+
+.main-city:nth-child(odd) {
+  background-color: #3e61a3;
+}
+
+.pin {
+  width: 50px;
+  height: 50px;
+  color: #2d4573;
+  background-color: #3e61a3;
+  border-radius: 50%;
+}
+
+.city-name {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.aqi-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid aqua;
+  border-radius: 12px;
+  padding: 10px;
+  width: fit-content;
+}
+
+.check-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 45%;
+    left: 35%;
+    color:antiquewhite;
+}
+
+.arrow-btn {
+    width: 32px;
+    height: 32px;
+}
+
+.wind-logo {
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  color: aqua;
+}
+
+.aqi-key {
+  font-size: 20px;
+}
+
+.aqi-value-0-50 {
+    font-size: 40px;
+    margin-left: 5%;
+    padding: 4px;
+    border-radius: 8px;
+  background-color: #096;
+}
+
+.aqi-value-51-100 {
+  background-color: #ffde33;
+  color: black;
+  font-size: 40px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.aqi-value-101-150 {
+  background-color: #f93;
+  color: black;
+  font-size: 40px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.aqi-value-151-200 {
+  background-color: #c03;
+  font-size: 40px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.aqi-value-201-300 {
+  background-color: #609;
+  font-size: 40px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.aqi-value-300+ {
+  background-color: #7e0023;
+  font-size: 40px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
