@@ -1,0 +1,131 @@
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  .lower-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+.city-page {
+  width: 99vw;
+  margin: 0 0.5vw;
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 99vw;
+  height: 40%;
+}
+
+.globe {
+  width: 130px;
+  height: 130px;
+  color: #2d4573;
+}
+
+.aqi-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.time-stamp {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.mid-container {
+  text-align: center;
+  width: 99vw;
+  margin: 0 0.5vw;
+  background-color: #35548b;
+  padding: 5px 0;
+  margin-bottom: 2px;
+}
+
+.lower-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.attributions {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.details {
+  text-align: center;
+  width: 100%;
+  background-color: #3e61a3;
+  padding: 20px 0;
+  line-height: 2rem;
+}
+
+.details:nth-child(odd) {
+  background-color: #4369b2;
+}
+
+a {
+  color: bisque;
+}
+
+.separator {
+  width: 35%;
+  color: #3e61a3;
+}
+
+.chart {
+  padding: 4rem;
+  background-color: #4268af;
+}
+
+table {
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+th,
+td {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.bck-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-left: 50px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  bottom: 70px;
+  right: 20px;
+  padding: 0;
+}
+
+#bck-chevron {
+  font-size: 50px;
+  color: antiquewhite;
+}
+
+.load-error {
+  color: antiquewhite;
+  font-size: 28px;
+  padding: 20px;
+  margin: 25%;
+  width: 50vw;
+  text-align: center;
+  background-color: #3e61a3;
+}

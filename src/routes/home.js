@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { SiApacheairflow } from 'react-icons/si';
-import { FiArrowRightCircle } from 'react-icons/fi';
+import { VscArrowCircleRight } from 'react-icons/vsc';
 import { MdPlace } from 'react-icons/md';
 import { fetchAqi } from '../Redux/home/homeSlice';
 import '../styles/home.css';
@@ -54,7 +54,7 @@ const Home = () => {
     } if (aqi >= 201 && aqi <= 300) {
       return 'aqi-value-201-300';
     }
-    return 'aqi-value-300+';
+    return 'aqi-value-300-500';
   };
 
   return (
@@ -72,7 +72,7 @@ const Home = () => {
                 className="check-btn"
                 onClick={() => handleRedirect(city.city.name)}
               >
-                <FiArrowRightCircle classname="arrow-btn" />
+                <VscArrowCircleRight classname="arrow-btn" />
               </button>
               <div className="aqi-container">
                 <SiApacheairflow className="wind-logo" />

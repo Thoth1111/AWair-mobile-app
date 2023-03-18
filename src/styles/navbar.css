@@ -7,13 +7,13 @@ nav {
   gap: 4%;
   align-items: center;
   color: antiquewhite;
-  background-color: #2d4573;
+  background-color: #4369b2;
 }
 
 h1 {
   color: #05c3fe;
   font-size: 32px;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 #air-txt {
@@ -22,9 +22,9 @@ h1 {
 }
 
 #cityname {
-  background-color: #4369b2;
+  background-color: #35548b;
   color: antiquewhite;
-  border: none;
+  border: 1px solid antiquewhite;
   outline: none;
   border-radius: 50px 0 0 50px;
   height: 30px;
@@ -41,12 +41,12 @@ h1 {
 #sub-btn {
   position: relative;
   top: 11px;
-  background-color: #4369b2;
+  background-color: #35548b;
   margin-right: 20px;
-  border: none;
+  border: 1px solid antiquewhite;
   outline: none;
   border-radius: 0 50px 50px 0;
-  height: 32px;
+  height: 33px;
   width: 32px;
 }
 
