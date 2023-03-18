@@ -6,10 +6,10 @@ const token = '/?token=84ae272c2a6c1c6890572f398be954a05210aaed';
 
 const cleanData = (apiData) => {
   const {
-    aqi, idx, attributions, city,
+    aqi, idx, attributions, time, city,
   } = apiData.data;
   return {
-    aqi, idx, attributions, city,
+    aqi, idx, attributions, time, city,
   };
 };
 

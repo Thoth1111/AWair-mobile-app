@@ -23,6 +23,7 @@ const Navbar = () => {
     if (event.key === 'Enter' && cityname) {
       event.preventDefault();
       navigate(`/city/${cityname}`);
+      setCityName('');
     }
   };
 
