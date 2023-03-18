@@ -25,7 +25,8 @@
 # 📖 AWair App <a name="about-project"></a>
 
 **Awair App** is a project to build a mobile app using React/Redux that showcases metrics of air quality index based on stations close to selected cities. Users can view the AQI of their city by searching in the app, and they will obtain results with a chart to decipher them. 
-[Project presentation](https://www.loom.com/share/958b6d9856ab4239b74337e40c47179c)
+
+[Video presentation](https://www.loom.com/share/958b6d9856ab4239b74337e40c47179c)
 
 ## 🛠 Built With <a name="built-with"></a>
 -React
@@ -133,7 +134,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Thoth1111/AWair-mobile-app/issues).
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
+For issues feel free to check the [issues page](https://github.com/Thoth1111/AWair-mobile-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +154,7 @@ We would like to acknowledge Microverse for the training required to fulfill thi
 
 This project is [MIT](https://github.com/Thoth1111/AWair-mobile-app/blob/main/LICENSE) licensed.
 
-The design is by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.<br /> 
+The design is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.<br /> 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
