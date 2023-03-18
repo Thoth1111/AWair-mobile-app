@@ -25,8 +25,10 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchPromises = mainCities.map((city) => dispatch(fetchAqi(city)));
-    Promise.all(fetchPromises);
+    const fetchPromises = async () => {
+      await Promise.all(mainCities.map((city) => dispatch(fetchAqi(city))));
+    };
+    fetchPromises();
   }, [dispatch]);
 
   const cityData = useSelector((state) => {

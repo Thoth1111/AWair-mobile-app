@@ -26,8 +26,9 @@ export const homeSlice = createSlice({
   initialState,
   reducers: {
   },
-  extraReducers: {
-    [fetchAqi.fulfilled]: (state, action) => [...state, action.payload],
+  extraReducers(builder) {
+    builder
+      .addCase(fetchAqi.fulfilled, (state, action) => [...state, action.payload]);
   },
 });
 

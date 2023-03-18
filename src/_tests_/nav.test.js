@@ -1,16 +1,16 @@
 import { Provider } from 'react-redux';
-import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
+import { BrowserRouter } from 'react-router-dom';
 import store from '../Redux/store';
-import Home from '../routes/home';
+import Navbar from '../components/navbar';
 
-describe('Home Render', () => {
+describe('Navbar', () => {
   it('should render the component', () => {
     const tree = renderer.create(
       <Provider store={store}>
-        <MemoryRouter>
-          <Home />
-        </MemoryRouter>
+        <BrowserRouter>
+          <Navbar />
+        </BrowserRouter>
       </Provider>,
     ).toJSON();
     expect(tree).toMatchSnapshot();

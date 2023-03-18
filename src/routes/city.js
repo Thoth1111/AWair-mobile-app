@@ -113,7 +113,6 @@ const City = () => {
                   {' '}
                   <br />
                   <a target="_blank" href={tribute.url} rel="noreferrer">Visit</a>
-                  <hr className="separator" />
                 </p>
               ))}
             </span>
