@@ -3,7 +3,7 @@ import { BiChevronLeft } from 'react-icons/bi';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { GoGlobe } from 'react-icons/go';
-import { fetchAqi } from '../Redux/home/homeSlice';
+import fetchAqi from '../Redux/apiFilter';
 import '../styles/city.css';
 
 const City = () => {

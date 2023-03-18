@@ -122,10 +122,10 @@ td {
 
 .load-error {
   color: antiquewhite;
-  font-size: 28px;
-  padding: 20px;
+  font-size: 22px;
+  padding: 10px;
   margin: 10%;
-  width: 50vw;
+  width: fit-content;
   text-align: center;
   background-color: #3e61a3;
 }

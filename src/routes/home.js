@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { SiApacheairflow } from 'react-icons/si';
 import { VscArrowCircleRight } from 'react-icons/vsc';
 import { MdPlace } from 'react-icons/md';
-import { fetchAqi } from '../Redux/home/homeSlice';
+import fetchAqi from '../Redux/apiFilter';
 import '../styles/home.css';
 
 const mainCities = [
