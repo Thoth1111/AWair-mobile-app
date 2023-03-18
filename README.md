@@ -22,9 +22,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Playful_Outlaw <a name="about-project"></a>
+# 📖 AWair App <a name="about-project"></a>
 
-**Playful_Outlaw** is a project to build a mobile game library app using React/Redux that showcases metrics of free to play games by the year of release. Users can view the total number of games by year of release and developer. 
+**Awair App** is a project to build a mobile app using React/Redux that showcases metrics of air quality index based on stations close to selected cities. Users can view the AQI of their city by searching in the app, and they will obtain results with a chart to decipher them. 
+
+[Video presentation](https://www.loom.com/share/958b6d9856ab4239b74337e40c47179c)
 
 ## 🛠 Built With <a name="built-with"></a>
 -React
@@ -52,7 +54,7 @@
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.freetogame.com/api-doc">FreeToGame API</a></li>
+    <li><a href="https://api.waqi.info/feed/">FreeToGame API</a></li>
   </ul>
 </details>
 
@@ -70,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live-Demo]()
+[Live-Demo](https://awair-app.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +86,7 @@ To get a local copy up and running, follow these steps:
 
 ### Setup
 
-Clone this [repository](https://github.com/Thoth1111/Playful-Outlaw.git) to your desired folder.
+Clone this [repository](https://github.com/Thoth1111/AWair-mobile-app) to your desired folder.
 
 ### Usage
 
@@ -132,7 +134,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Thoth1111/Playful-Outlaw/issues).
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
+For issues feel free to check the [issues page](https://github.com/Thoth1111/AWair-mobile-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,9 +152,9 @@ We would like to acknowledge Microverse for the training required to fulfill thi
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Thoth1111/Playful-Outlaw/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/Thoth1111/AWair-mobile-app/blob/main/LICENSE) licensed.
 
-The design is by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.<br /> 
+The design is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.<br /> 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

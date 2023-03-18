@@ -1,0 +1,195 @@
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  .cities-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    padding: 0%;
+  }
+
+  .main-city {
+    display: block;
+    height: 380px;
+    width: 200px;
+    margin: 5px 0;
+    padding: 20px;
+  }
+}
+
+section {
+  width: 99vw;
+  margin: 0 0.5vw;
+}
+
+.misc-container {
+  padding: 40px 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+}
+
+.flashed-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: -20px;
+  color: antiquewhite;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.flashed-text span {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+}
+
+#home-intro {
+  width: 100%;
+  background-color: #2d4573;
+  color: antiquewhite;
+  padding: 8px 0;
+  margin: 1px 0;
+  text-align: center;
+}
+
+.cities-container {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  width: 99vw;
+  flex-wrap: wrap;
+}
+
+.main-city {
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #2d4573;
+  padding: 20px;
+  padding-right: 30px;
+  height: 380px;
+  width: 20%;
+}
+
+.main-city:nth-child(odd) {
+  background-color: #3e61a3;
+}
+
+.pin {
+  width: 70px;
+  height: 70px;
+  color: #2d4573;
+  background-color: #3e61a3;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 120px;
+  margin-bottom: 30px;
+}
+
+.city-name {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.aqi-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid aqua;
+  border-radius: 12px;
+  padding: 8px;
+  margin-top: -55px;
+  width: fit-content;
+}
+
+.check-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: 50%;
+  color: antiquewhite;
+}
+
+.check-btn svg {
+  width: 30px;
+  height: 30px;
+}
+
+.wind-logo {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  color: aqua;
+}
+
+.aqi-key {
+  font-size: 20px;
+}
+
+.aqi-value-0-50 {
+  font-size: 30px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #096;
+}
+
+.aqi-value-51-100 {
+  background-color: #ffde33;
+  color: black;
+  font-size: 30px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.aqi-value-101-150 {
+  background-color: #f93;
+  color: black;
+  font-size: 30px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.aqi-value-151-200 {
+  background-color: #c03;
+  font-size: 30px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.aqi-value-201-300 {
+  background-color: #609;
+  font-size: 30px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.aqi-value-300-500 {
+  background-color: #7e0023;
+  font-size: 30px;
+  margin-left: 5%;
+  padding: 4px;
+  border-radius: 8px;
+}
