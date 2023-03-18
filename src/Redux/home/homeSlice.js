@@ -32,4 +32,4 @@ export const homeSlice = createSlice({
   },
 });
 
-export default homeSlice.reducer;
+export const { reducer: homeReducer, extraReducers } = homeSlice;

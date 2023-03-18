@@ -43,12 +43,14 @@ const City = () => {
 
   if (!newCity.aqi) {
     content = (
-      <span className="load-error">
-        Sorry. No Stats found for
-        {' '}
-        {cityname}
-        . Please try again.
-      </span>
+      <div className="error-window">
+        <p className="load-error">
+          Sorry. No Stats found for
+          {' '}
+          {cityname}
+          . Please try a different city or hit the back button.
+        </p>
+      </div>
     );
   } else {
     const aqiClass = getAqiClass(newCity.aqi);
@@ -111,7 +113,6 @@ const City = () => {
                   {' '}
                   <br />
                   <a target="_blank" href={tribute.url} rel="noreferrer">Visit</a>
-                  <hr className="separator" />
                 </p>
               ))}
             </span>
