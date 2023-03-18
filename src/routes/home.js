@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { SiApacheairflow } from 'react-icons/si';
 import { VscArrowCircleRight } from 'react-icons/vsc';
 import { MdPlace } from 'react-icons/md';
-import fetchAqi from '../Redux/apiFilter';
+import { GoGlobe } from 'react-icons/go';
+import { fetchAqi } from '../Redux/home/homeSlice';
 import '../styles/home.css';
 
 const mainCities = [
@@ -59,6 +60,19 @@ const Home = () => {
 
   return (
     <section>
+      <div className="misc-container">
+        <GoGlobe className="globe" />
+        <div className="flashed-text">
+          <h3>
+            Global AQI (Air Quality Index)
+          </h3>
+          <span>
+            index/500
+            <br />
+            Search by city
+          </span>
+        </div>
+      </div>
       <div id="home-intro">Air Quality Index in a few Major Cities</div>
       <div className="cities-container">
         {cityData.map((city) => {
@@ -72,7 +86,7 @@ const Home = () => {
                 className="check-btn"
                 onClick={() => handleRedirect(city.city.name)}
               >
-                <VscArrowCircleRight classname="arrow-btn" />
+                <VscArrowCircleRight />
               </button>
               <div className="aqi-container">
                 <SiApacheairflow className="wind-logo" />

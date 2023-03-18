@@ -120,12 +120,21 @@ td {
   color: antiquewhite;
 }
 
+.error-window {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  background-color: #3e61a3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .load-error {
   color: antiquewhite;
-  font-size: 22px;
-  padding: 10px;
-  margin: 10%;
+  font-size: 18px;
   width: fit-content;
   text-align: center;
-  background-color: #3e61a3;
+  background-color: transparent;
 }

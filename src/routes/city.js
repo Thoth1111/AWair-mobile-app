@@ -3,7 +3,7 @@ import { BiChevronLeft } from 'react-icons/bi';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { GoGlobe } from 'react-icons/go';
-import fetchAqi from '../Redux/apiFilter';
+import { fetchAqi } from '../Redux/home/homeSlice';
 import '../styles/city.css';
 
 const City = () => {
@@ -43,12 +43,14 @@ const City = () => {
 
   if (!newCity.aqi) {
     content = (
-      <span className="load-error">
-        Sorry. No Stats found for
-        {' '}
-        {cityname}
-        . Please try again.
-      </span>
+      <div className="error-window">
+        <p className="load-error">
+          Sorry. No Stats found for
+          {' '}
+          {cityname}
+          . Please try a different city or hit the back button.
+        </p>
+      </div>
     );
   } else {
     const aqiClass = getAqiClass(newCity.aqi);
