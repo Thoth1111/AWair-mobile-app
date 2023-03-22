@@ -12,6 +12,8 @@
   padding: 20px;
   color: antiquewhite;
   gap: 10px;
+  border-left: 1px solid #2d4573;
+  border-right: 1px solid #2d4573;
 }
 
 section {
