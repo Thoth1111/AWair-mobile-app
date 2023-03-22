@@ -26,6 +26,9 @@
 
 **Awair App** is a project to build a mobile app using React/Redux that showcases metrics of air quality index based on stations close to selected cities. Users can view the AQI of their city by searching in the app, and they will obtain results with a chart to decipher them. 
 
+<img src="./src/Assets/images/Home.png" alt="home-screenshot"/>
+<img src="./src/Assets/images/city_page.png" alt="city-page-screenshot"/>
+
 [Video presentation](https://www.loom.com/share/958b6d9856ab4239b74337e40c47179c)
 
 ## 🛠 Built With <a name="built-with"></a>
