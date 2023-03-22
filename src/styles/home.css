@@ -1,44 +1,46 @@
-@media only screen and (min-width: 320px) and (max-width: 800px) {
-  .cities-container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-    padding: 0%;
-  }
+.cities-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+  padding: 0%;
+}
 
-  .main-city {
-    display: block;
-    height: 380px;
-    width: 200px;
-    margin: 5px 0;
-    padding: 20px;
-  }
+.main-city {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: antiquewhite;
+  gap: 10px;
 }
 
 section {
-  width: 99vw;
-  margin: 0 0.5vw;
+  width: 100%;
 }
 
 .misc-container {
-  padding: 40px 70px;
+  padding: 10px 8px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 30vh;
+}
+
+.globe {
+  width: 120px;
+  height: 120px;
+  color: #2d4573;
 }
 
 .flashed-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: -20px;
   color: antiquewhite;
-  font-size: 25px;
+  font-size: 14px;
   font-weight: bold;
-  text-align: center;
+  text-align: end;
 }
 
 h3 {
@@ -46,9 +48,10 @@ h3 {
 }
 
 .flashed-text span {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: normal;
   text-align: left;
+  margin-top: 20px;
 }
 
 #home-intro {
@@ -58,28 +61,7 @@ h3 {
   padding: 8px 0;
   margin: 1px 0;
   text-align: center;
-}
-
-.cities-container {
-  display: flex;
-  justify-content: center;
-  gap: 1px;
-  width: 99vw;
-  flex-wrap: wrap;
-}
-
-.main-city {
-  color: antiquewhite;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #2d4573;
-  padding: 20px;
-  padding-right: 30px;
-  height: 380px;
-  width: 20%;
+  font-size: 14px;
 }
 
 .main-city:nth-child(odd) {
@@ -93,12 +75,11 @@ h3 {
   background-color: #3e61a3;
   border-radius: 50%;
   text-align: center;
-  margin-right: 120px;
-  margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 .city-name {
-  font-size: 25px;
+  font-size: 14px;
   font-weight: bold;
   text-align: right;
   margin-top: 20px;
@@ -110,8 +91,9 @@ h3 {
   justify-content: center;
   border: 1px solid aqua;
   border-radius: 12px;
+  margin-left: 20%;
+  margin-top: 20px;
   padding: 8px;
-  margin-top: -55px;
   width: fit-content;
 }
 
@@ -121,27 +103,28 @@ h3 {
   outline: none;
   padding: 0;
   background-color: transparent;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
   position: relative;
-  bottom: 50%;
+  top: 8px;
   color: antiquewhite;
 }
 
 .check-btn svg {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .wind-logo {
   margin-right: 15px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   color: aqua;
 }
 
 .aqi-key {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .aqi-value-0-50 {

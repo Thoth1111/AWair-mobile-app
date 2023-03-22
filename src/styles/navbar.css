@@ -1,7 +1,6 @@
 nav {
-  width: 99vw;
-  font-size: 18px;
-  margin: 0 0.5vw;
+  width: 100%;
+  font-size: 11px;
   display: flex;
   justify-content: space-between;
   gap: 4%;
@@ -12,8 +11,8 @@ nav {
 
 h1 {
   color: #05c3fe;
-  font-size: 32px;
-  margin-left: 80px;
+  font-size: 18px;
+  margin-left: 40px;
 }
 
 #air-txt {
@@ -27,31 +26,33 @@ h1 {
   border: 1px solid antiquewhite;
   outline: none;
   border-radius: 50px 0 0 50px;
-  height: 30px;
+  height: 15px;
+  width: 120px;
   text-align: center;
-  margin-top: -20px;
 }
 
 #cityname::placeholder {
   color: antiquewhite;
   padding-left: 10px;
+  font-size: 10px;
   font-weight: bold;
 }
 
 #sub-btn {
   position: relative;
-  top: 11px;
+  top: 1.5px;
   background-color: #35548b;
   margin-right: 20px;
   border: 1px solid antiquewhite;
   outline: none;
+  padding: 2px;
   border-radius: 0 50px 50px 0;
-  height: 33px;
-  width: 32px;
+  height: 18.5px;
+  width: 19px;
 }
 
 .search-icon {
   color: antiquewhite;
-  height: 100%;
-  width: 100%;
+  height: 12px;
+  width: 12px;
 }

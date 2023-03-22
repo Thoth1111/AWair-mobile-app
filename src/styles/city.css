@@ -1,16 +1,5 @@
-@media only screen and (min-width: 320px) and (max-width: 800px) {
-  .lower-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-  }
-}
-
 .city-page {
-  width: 99vw;
-  margin: 0 0.5vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   color: antiquewhite;
@@ -18,58 +7,61 @@
 
 .top-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 99vw;
-  height: 40%;
+  width: 100%;
+  margin-top: -40px;
 }
 
 .globe {
   width: 130px;
   height: 130px;
+  padding-right: 20px;
   color: #2d4573;
 }
 
 .aqi-cont {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+  gap: 2px;
   align-items: flex-start;
+  margin-right: 5px;
 }
 
 .time-stamp {
-  font-size: 20px;
+  font-size: 12px;
   line-height: 2rem;
 }
 
 .mid-container {
   text-align: center;
-  width: 99vw;
-  margin: 0 0.5vw;
+  width: 100%;
   background-color: #35548b;
   padding: 5px 0;
+  font-size: 12px;
   margin-bottom: 2px;
 }
 
 .lower-container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .attributions {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 
 .details {
   text-align: center;
   width: 100%;
   background-color: #3e61a3;
-  padding: 20px 0;
-  line-height: 2rem;
+  padding: 10px 0;
+  line-height: 1rem;
+  font-size: 12px;
 }
 
 .details:nth-child(odd) {
@@ -86,18 +78,18 @@ a {
 }
 
 .chart {
-  padding: 4rem;
+  padding: 2rem;
   background-color: #4268af;
 }
 
 table {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: -30px;
 }
 
 th,
 td {
-  font-size: 16px;
+  font-size: 12px;
   padding: 10px;
 }
 
@@ -106,17 +98,17 @@ td {
   cursor: pointer;
   border: none;
   outline: none;
-  margin-left: 50px;
-  height: 50px;
-  width: 50px;
+  margin-left: 80px;
+  height: 30px;
+  width: 30px;
   position: relative;
-  bottom: 70px;
-  right: 20px;
+  bottom: 40px;
+  right: 70px;
   padding: 0;
 }
 
 #bck-chevron {
-  font-size: 50px;
+  font-size: 30px;
   color: antiquewhite;
 }
 
